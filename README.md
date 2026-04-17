@@ -7,7 +7,7 @@
 
 -------
 
-[![Nhlakziin-MD](https://raw.githubusercontent.com/QadeerXTech/QADEER-XD/main/lib/mr.svg)](https://whatsapp.com/channel/0029VbAkAEhCRs1g8MmyEJ2K)
+[![Nhlakziin-MD](https://github.com/crazykiddrsa/nhlakziin-MD/blob/main/lib/mr.svg)]([https://chat.whatsapp.com/Db8aQLO3dwa50eXDpdFaFg?mode=gi_t]
 
 
 -------------
@@ -20,7 +20,7 @@
 
 > DEPLOY NHLAKZIIN MD
 <div align="center">    
-  <a href="https://dashboard.heroku.com/new?template=https://github.com/QadeerXTech/QADEER-XD">
+  <a href="https://dashboard.heroku.com/new?template=https://github.com/Crazykiddrsa/Nhlakziin-MD">
     <img src="https://img.shields.io/badge/Heroku%20Deploy-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=darkblue&color=purple" alt="Nhlakziin-MD"/>
   </a>
 </div>
@@ -39,7 +39,7 @@
 
 > NHLAKZIIN MD ZIP
 <p align="center">
-  <a href="https://github.com/QadeerXTech/QADEER-XD/archive/refs/heads/main.zip" target="_blank">
+  <a href="https://github.com/Crazykiddrsa/Nhlakziin-MD/archive/refs/heads/main.zip" target="_blank">
     <img alt="Download ZIP" src="https://img.shields.io/badge/DOWNLOAD%20ZIP-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=darkblue&color=darkgreen"/>
   </a>
 </p>
