@@ -1,6 +1,6 @@
 services:
   - type: worker
-    name: Qadeer XD
+    name: Nhlakziin MD
     env: docker
     region: frankfurt
     plan: free
