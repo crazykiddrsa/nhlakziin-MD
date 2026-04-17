@@ -7,7 +7,7 @@
 
 -------
 
-[![Nhlakziin-MD](https://github.com/crazykiddrsa/nhlakziin-MD/blob/main/lib/mr.svg)]([https://chat.whatsapp.com/Db8aQLO3dwa50eXDpdFaFg?mode=gi_t])
+[![Nhlakziin-MD](https://github.com/crazykiddrsa/nhlakziin-MD/blob/main/lib/mr.svg)] ([https://chat.whatsapp.com/Db8aQLO3dwa50eXDpdFaFg?mode=gi_t])
 
 
 -------------
