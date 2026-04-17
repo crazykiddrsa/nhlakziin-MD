@@ -1,7 +1,7 @@
 {
-    "name": "Qadeer-XD",
+    "name": "Nhlakziin-MD",
     "version": "7.0.1",
-    "description": "WhatsApp MD-Style Multi-Command Bot by Qadeer Brahvi",
+    "description": "WhatsApp MD-Style Multi-Command Bot by Nhlakziin",
     "main": "index.js",
     "type": "commonjs",
     "scripts": {
@@ -11,7 +11,7 @@
     },
     "keywords": [
         "whatsapp bot",
-        "Qadeer-XD",
+        "Nhlakziin-MD",
         "bot",
         "baileys",
         "library"
