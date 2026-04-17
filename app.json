@@ -1,26 +1,213 @@
+
 {
-  "name": "Nhlakziin",
-  "description": "Nhlakziin-MD - WhatsApp MD Multi-Device Bot powered by Baileys",
-  "repository": "https://github.com/Crazykiddrsa/Nhlakziin-MD",
-  "logo": "https://n.uguu.se/OTaxspjD.jpg",
-  "keywords": ["whatsapp", "baileys", "bot", "node", "md", "nhlakziin-md"],
-  "stack": "heroku-24",
-  "buildpacks": [
-    {
-      "url": "https://github.com/heroku/heroku-buildpack-nodejs.git"
-    }
-  ],
-  "formation": {
-    "worker": {
-      "quantity": 1,
-      "size": "basic"
-    }
-  },
+  "name": "Nhlakziin-MD",
+  "description": "World best fast Whatsapp bot created by nhlakziin-md",
+  "logo": "https://files.catbox.moe/2ozgh8.jpg",
+  "keywords": ["Nhlakziin-MD"],
+  "success_url": "/",
+
+    "stack": "container",
   "env": {
     "SESSION_ID": {
-      "description": "Nhlakziin-MD session string. Accepted formats: QADEER-MD:~<base64>, QADEER-XD:~<base64>, QADEER-X:~<base64>",
-      "required": false,
+      "description": "QADEER-X:~eyJub2lzZUtleSI6eyJwcml2YXRlIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoibUVPRktzTmZRYTAxUEl4OEljaGFaMDdIMFNYdFBEUC90M0x1QmRnbFQxRT0ifSwicHVibGljIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiWlZFbkFkTXRMNko4R3RlejBDOXFKK3M4T213MGdZSkhEcmh2eEI3Y0xoZz0ifX0sInBhaXJpbmdFcGhlbWVyYWxLZXlQYWlyIjp7InByaXZhdGUiOnsidHlwZSI6IkJ1ZmZlciIsImRhdGEiOiIwRmw1Q2o3a2pQaXNkblYzRFhmbVpsMnFCV1kvWXFrWTk0VWw0RUtRWm5vPSJ9LCJwdWJsaWMiOnsidHlwZSI6IkJ1ZmZlciIsImRhdGEiOiJFeFJlRGVHR2s0bTRpYlo0Q1huV3RJL2pKb09CTEh2QlhhMmZwTzJCQTFRPSJ9fSwic2lnbmVkSWRlbnRpdHlLZXkiOnsicHJpdmF0ZSI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6Im1Bd1VBRmV4c2paNHdDMWc5aWdWQ3R5YjgvcFNObUU0dnM5ZEFlaHY5Rmc9In0sInB1YmxpYyI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6IkRJbEZBVDhFbVltMGVqVUQ4Z1RqWHg5eGwyWHByN3Nyb3ZuYkNsSmRDRUk9In19LCJzaWduZWRQcmVLZXkiOnsia2V5UGFpciI6eyJwcml2YXRlIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiaURNQkl1ZWdoN0VYcVV6VVF6bGZuVGNtUTFwMnR4RUFEd0JaakpxeDNXMD0ifSwicHVibGljIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiQmdTc281M0d4M0grblBOUmx6Mm9IeHJpZERIbm05NzNuRGhSd3dyczRDcz0ifX0sInNpZ25hdHVyZSI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6IkF3V3Vqb1NkWDFlc1dZRnV2aU5hNjJqdEhLZEswTWZZa1RXbG1rbmdhWFdpcXE0c2REU09ua2krT0NMWjMyUFM3UmxCeDRhclpWZ0tvN2g2dkNJR2hnPT0ifSwia2V5SWQiOjF9LCJyZWdpc3RyYXRpb25JZCI6MTUzLCJhZHZTZWNyZXRLZXkiOiJ1VlN0ZVNKRUUxRVl4eTU2SXZKRjM2M3o0cHlYVlEwMDN6T3ZxamJ6SndrPSIsInByb2Nlc3NlZEhpc3RvcnlNZXNzYWdlcyI6W10sIm5leHRQcmVLZXlJZCI6ODEzLCJmaXJzdFVudXBsb2FkZWRQcmVLZXlJZCI6ODEzLCJhY2NvdW50U3luY0NvdW50ZXIiOjAsImFjY291bnRTZXR0aW5ncyI6eyJ1bmFyY2hpdmVDaGF0cyI6ZmFsc2V9LCJyZWdpc3RlcmVkIjp0cnVlLCJwYWlyaW5nQ29kZSI6IlpYOE5ZOEU5IiwibWUiOnsiaWQiOiIyNzY4NDU4NDY2MjoxMUBzLndoYXRzYXBwLm5ldCIsImxpZCI6IjE0MjI1MDE1NTc4NjU0OjExQGxpZCJ9LCJhY2NvdW50Ijp7ImRldGFpbHMiOiJDTS9Bdlp3RkVKQ0hpYzhHR0FnZ0FDZ0EiLCJhY2NvdW50U2lnbmF0dXJlS2V5IjoiYjJSekQ0ckRZc09SVE1kY1ZSTWRIVWFQaHE0MnYyeVdicHc2SStsMFl4RT0iLCJhY2NvdW50U2lnbmF0dXJlIjoiNTEya3Q3M2RoK1RFN0ZWL3NjSE1Wandrc2ZNam1KeTB3djd6WU9taTZwSUJ5SUxlQXlaUnA0cVRQbVVrYnlDZi9sL1RDRndCVXVsMzNnMTEyM1kyQWc9PSIsImRldmljZVNpZ25hdHVyZSI6IkJOcXQ4MEZlWkV0RWhnMUdOcVRnSjZmeCtUaVl2dXc5aXNnZWxreTdJeTNpNVNXamJnTU1vVzBvY3FnODg2MFZRSG5WV0FDK1RuMU1QcXNHcjQwdmdnPT0ifSwic2lnbmFsSWRlbnRpdGllcyI6W3siaWRlbnRpZmllciI6eyJuYW1lIjoiMTQyMjUwMTU1Nzg2NTQ6MTFAbGlkIiwiZGV2aWNlSWQiOjB9LCJpZGVudGlmaWVyS2V5Ijp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiQlc5a2N3K0t3MkxEa1V6SFhGVVRIUjFHajRhdU5yOXNsbTZjT2lQcGRHTVIifX1dLCJwbGF0Zm9ybSI6ImFuZHJvaWQiLCJyb3V0aW5nSW5mbyI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6IkNBa0lBd2dJIn0sImxhc3RBY2NvdW50U3luY1RpbWVzdGFtcCI6MTc3NjQzNjEyMywibXlBcHBTdGF0ZUtleUlkIjoiQUFBQUFCMVgifQ==",
+      "required": true,
       "value": ""
+    },  
+    
+    "STICKER_NAME": {
+      "description": "type your sticker pack name.",
+      "required": false,
+      "value": "Nhlakziin AI"
+    }, 
+      
+    "PREFIX": {
+      "description": "paste your bot prefix note! Don't apply null prefix.",
+      "required": false,
+      "value": "."
+    },
+    
+    "MODE": {
+      "description": "select your bot work type public-private-inbox-group.",
+      "required": false,
+      "value": "public"
+      
+    },
+
+     "ANTI_DELETE": {
+      "description": "set true for show deleted messages.",
+      "required": false,
+      "value": "true"  
+    },
+    
+    "ALWAYS_ONLINE": {
+      "description": "Make it true if want always online.",
+      "required": false,
+      "value": "false"  
+    },    
+   
+    "AUTO_REPLY": {
+      "description": "Make it true if you want automatic reply.",
+      "required": false,
+      "value": "false"
+    }, 
+
+    "AUTO_STICKER": {
+      "description": "Make it true if you want automatic sticker.",
+      "required": false,
+      "value": "false"
+    }, 
+
+
+    "AUTO_STATUS_SEEN": {
+      "description": "Make it true for automatic status seen.",
+      "required": true,
+      "value": "true"
+    }, 
+
+    "AUTO_STATUS_REACT": {
+      "description": "make it true for automatic status reaction or like.",
+      "required": true,
+      "value": "true"
+    }, 
+
+    "AUTO_STATUS_REPLY": {
+      "description": "Make it true for auto reply msg on status seen.",
+      "required": true,
+      "value": "false"
+    }, 
+
+    "AUTO_STATUS_MSG": {
+      "description": "Type custom message on status reply",
+      "required": true,
+      "value": "*𝚂𝙴𝙴𝙽 𝚈𝙾𝚄𝚁 𝚂𝚃𝙰𝚃𝚄𝚂 𝙱𝚈 nhlakziin-𝙰𝙸*"
+   
+     }, 
+    
+    "OWNER_NAME": {
+      "description": "Type Bot Owner Name.",
+      "required": false,
+      "value": "Nhlakziin"
+}, 
+
+    "OWNER_NUMBER": {
+      "description": "put the owner number for bot.",
+      "required": false,
+      "value": "27653584906"
+
+    }, 
+
+    "BOT_NAME": {
+      "description": "Type here the bot name.",
+      "required": false,
+      "value": "Nhlakziin-MD"
+
+      }, 
+
+    "ANTI_LINK": {
+      "description": "Make it true if you want bot auto remove group link.",
+      "required": true,
+      "value": "true"
+      
+    },
+    
+    "ANTI_BAD": {
+      "description": "Make it true if you want bot auto delete bad words.",
+      "required": false,
+      "value": "false"
+    },
+
+   "MENTION_REPLY": {
+      "description": "make it true if want mention reply if someone menetion you.",
+      "required": false,
+      "value": "false"
+    },
+    
+    "MENU_IMAGE_URL": {
+      "description": "add url for mention reply and menu if want.",
+      "required": false,
+      "value": "https://files.catbox.moe/2ozgh8.jpg"
+    },
+    
+     "DESCRIPTION": {
+      "description": "add caption for menu and other",
+      "required": false,
+      "value": "*© 𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈 Nhlakziin*"
+    },
+
+      "DELETE_LINKS": {
+      "description": "remove links from group automatically without removing member",
+      "required": false,
+      "value": "false"
+    },
+    
+    "AUTO_RECORDING": {
+      "description": "Make it true if you want auto recoding.",
+      "required": false,
+      "value": "true"
+    },
+
+    "AUTO_TYPING": {
+      "description": "Make it true if you want auto typing.",
+      "required": false,
+      "value": "false"
+    },
+
+    "AUTO_REACT": {
+      "description": "Make it true if you want react on every message.",
+      "required": false,
+      "value": "false"
+    },
+    
+    "CUSTOM_REACT": {
+      "description": "Make it true if you want custom reactions.",
+      "required": false,
+      "value": "false"
+      
+    }, 
+    
+    "CUSTOM_REACT_EMOJIS": {
+      "description": "put here custom react react emojis.",
+      "required": false,
+      "value": "💝,💖,💗,❤️‍🩹,❤️,🧡,💛,💚,💙,💜,🤎,🖤,🤍"
+    }, 
+    
+    "ANTI_DEL_PATH": {
+      "description": "change it to -same- if you want to resend deleted message in same chat othwise inbox",
+      "required": false,
+      "value": "inbox"
+    }, 
+
+    "ADMIN_ACTION": {
+      "description": "make it true if want know who promote or demote a member .",
+      "required": false,
+      "value": "false"
+    },
+
+    "WELCOME": {
+      "description": "make it true if want welcome message in groups.",
+      "required": false,
+      "value": "false"
+    },
+
+    "GOODBYE": {
+      "description": "make it true if want goodbye message in groups.",
+      "required": false,
+      "value": "false"
+    },
+
+    "READ_MESSAGE": {
+      "description": "Make it true if you want bot read your all sms just now.",
+      "required": false,
+      "value": "false"
     }
-  }
+
+},
+
+     "buildpacks": [
+        {
+            "url": "https://github.com/heroku/heroku-buildpack-nodejs.git"
+        }
+     ],
+  "stack": "heroku-24"
 }
+  
