@@ -1,9 +1,9 @@
 {
-  "name": "QADEER-XD",
-  "description": "Qadeer XD - WhatsApp MD Multi-Device Bot powered by Baileys",
-  "repository": "https://github.com/QadeerXTech/QADEER-XD",
+  "name": "Nhlakziin",
+  "description": "Nhlakziin-MD - WhatsApp MD Multi-Device Bot powered by Baileys",
+  "repository": "https://github.com/Crazykiddrsa/Nhlakziin-MD",
   "logo": "https://n.uguu.se/OTaxspjD.jpg",
-  "keywords": ["whatsapp", "baileys", "bot", "node", "md", "qadeer-xd"],
+  "keywords": ["whatsapp", "baileys", "bot", "node", "md", "nhlakziin-md"],
   "stack": "heroku-24",
   "buildpacks": [
     {
@@ -18,7 +18,7 @@
   },
   "env": {
     "SESSION_ID": {
-      "description": "Qadeer XD session string. Accepted formats: QADEER-MD:~<base64>, QADEER-XD:~<base64>, QADEER-X:~<base64>",
+      "description": "Nhlakziin-MD session string. Accepted formats: QADEER-MD:~<base64>, QADEER-XD:~<base64>, QADEER-X:~<base64>",
       "required": false,
       "value": ""
     }
