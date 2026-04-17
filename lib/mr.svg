@@ -76,7 +76,7 @@
   <text x="50%" y="90" text-anchor="middle"
         font-size="44" font-family="Segoe UI, Verdana"
         fill="url(#rainbow)" filter="url(#neon)">
-    𓆩 QADEER-XD 𓆪
+    𓆩 Nhlakziin 𓆪
     <animateTransform attributeName="transform"
       type="scale" values="1;1.05;1" dur="3s"
       repeatCount="indefinite"/>
@@ -104,7 +104,7 @@
   <text x="300" y="215" text-anchor="middle"
         font-size="56" font-weight="bold"
         fill="url(#rainbow)" filter="url(#neon)">
-    QXB
+    The Goat
     <animate attributeName="opacity"
       values="1;0.4;1" dur="3.5s"
       repeatCount="indefinite"/>
