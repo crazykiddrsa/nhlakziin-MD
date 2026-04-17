@@ -7,7 +7,7 @@
 
 -------
 
-[![QADEER-XD](https://raw.githubusercontent.com/QadeerXTech/QADEER-XD/main/lib/mr.svg)](https://whatsapp.com/channel/0029VbAkAEhCRs1g8MmyEJ2K)
+[![Nhlakziin-MD](https://raw.githubusercontent.com/QadeerXTech/QADEER-XD/main/lib/mr.svg)](https://whatsapp.com/channel/0029VbAkAEhCRs1g8MmyEJ2K)
 
 
 -------------
@@ -21,7 +21,7 @@
 > DEPLOY NHLAKZIIN MD
 <div align="center">    
   <a href="https://dashboard.heroku.com/new?template=https://github.com/QadeerXTech/QADEER-XD">
-    <img src="https://img.shields.io/badge/Heroku%20Deploy-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=darkblue&color=purple" alt="Deploy Qadeer-XD"/>
+    <img src="https://img.shields.io/badge/Heroku%20Deploy-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=darkblue&color=purple" alt="Nhlakziin-MD"/>
   </a>
 </div>
 
